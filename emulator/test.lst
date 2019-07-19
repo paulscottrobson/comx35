@@ -1,0 +1,74 @@
+ AS V1.42 Beta [Bld 114] - source file test.asm - page 1 - 7/1/2017 16:47:23
+
+
+       1/       0 :                     
+       2/       0 :                     	cpu 	1802
+       3/       0 :                     	
+       4/       0 : =0H                 r0 = 0
+       5/       0 : =1H                 r1 = 1
+       6/       0 : =2H                 r2 = 2
+       7/       0 : =3H                 r3 = 3
+       8/       0 : =4H                 r4 = 4
+       9/       0 : =5H                 r5 = 5
+      10/       0 :                     
+      11/       0 :                     
+      12/       0 : 71                  	dis
+      13/       1 : 00                  	db 		0
+      14/       2 : F8 FF               	ldi 	255
+      15/       4 : A2                  	plo 	r2
+      16/       5 : F8 08               	ldi 	8
+      17/       7 : B2                  	phi 	r2
+      18/       8 :                     
+      19/       8 :                     ShowIt:
+      20/       8 : E2                  	sex 	r2
+      21/       9 : 69                  	inp 	1
+      22/       A : 32 08               	bz 		ShowIt
+      23/       C :                     
+      24/       C :                     GotCh:
+      25/       C : 61                  	out 	1
+      26/       D : 22                  	dec 	r2
+      27/       E : 30 08               	br 		ShowIt
+ AS V1.42 Beta [Bld 114] - source file test.asm - page 2 - 7/1/2017 16:47:23
+
+
+  symbol table (* = unused):
+  ------------------------
+
+*ARCHITECTURE :                                        x86_64-unknown-linux - |
+*BIGENDIAN :                      0 - | *BRANCHEXT :                      0 - |
+*CASESENSITIVE :                  0 - | *CONSTPI :        3.141592653589793 - |
+*DATE :                    7/1/2017 - | *FALSE :                          0 - |
+*FULLPMMU :                       1 - | *GOTCH :                          C C |
+*HAS64 :                          1 - | *HASDSP :                         0 - |
+*HASFPU :                         0 - | *HASPMMU :                        0 - |
+*INEXTMODE :                      0 - | *INLWORDMODE :                    0 - |
+*INMAXMODE :                      0 - | *INSRCMODE :                      0 - |
+*INSUPMODE :                      0 - | *LISTON :                         1 - |
+*MACEXP :                         1 - | *MOMCPU :                      1802 - |
+*MOMCPUNAME :                  1802 - | *NESTMAX :                      100 - |
+*PACKING :                        0 - | *PADDING :                        1 - |
+*R0 :                             0 - | *R1 :                             1 - |
+ R2 :                             2 - | *R3 :                             3 - |
+*R4 :                             4 - | *R5 :                             5 - |
+*RELAXED :                        0 - |  SHOWIT :                         8 C |
+*TIME :                    16:47:23 - | *TRUE :                           1 - |
+*VERSION :                     142F - |
+
+     36 symbols
+     34 unused symbols
+
+ AS V1.42 Beta [Bld 114] - source file test.asm - page 3 - 7/1/2017 16:47:23
+
+
+  codepages:
+  ----------
+
+STANDARD (0 changed characters)
+
+
+0.00 seconds assembly time
+
+     27 lines source file
+      1 pass
+      0 errors
+      0 warnings
